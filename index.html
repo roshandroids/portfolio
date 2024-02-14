@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roshandroids</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Roshan Shrestha</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Roshan Shrestha</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/img/profile-pic.png" alt="Roshan Shrestha profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Roshan Shrestha</h1>
+      <p class="section__text__p2">Flutter Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/file/flutter_resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/svgs/linkedin.svg" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/roshandroids/'" />
+        <img src="./assets/svgs/github.svg" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/roshandroids'" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/img/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/img/experience.png" alt="" class="icon" />
+            <h3>Experience</h3>
+            <p>3+ years <br />Flutter Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/img/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>
+              Post-Graduate
+              Full-Stack Software Development <br>B.Sc. (Hons) Computer Science and Software Engineering
+            </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Experienced Flutter Developer with 3+ years of expertise in mobile, web, and desktop app development.
+            Skilled in team
+            leadership, collaboration, and delivering creative solutions. Proficient in UI design and dedicated to
+            enhancing user
+            experience. Successful track record in both on-site and remote settings, with apps deployed on major
+            platforms.
+            Committed to continuous learning, code quality, and implementing enhancements.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Languages and Tools</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/svgs/flutter.svg" alt="Flutter Icon" class="icon" />
+              <div>
+                <h3>Flutter</h3>
+                <p>Advance</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/dart.svg" alt="Dart Icon" class="icon" />
+              <div>
+                <h3>Dart</h3>
+                <p>Advance</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/html5.svg" alt="HTML5 Icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/css3.svg" alt="CSS3 Icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/javascript.svg" alt="JavaScript Icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/swift.svg" alt="Swift Icon" class="icon" />
+              <div>
+                <h3>Swift UI</h3>
+                <p>Beginner</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/firebase.svg" alt="Firebase Icon" class="icon" />
+              <div>
+                <h3>Firebase</h3>
+                <p>Advance</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/python.svg" alt="Python Icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/flask.svg" alt="Flask Icon" class="icon" />
+              <div>
+                <h3>Flask</h3>
+                <p>Beginner</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/express.svg" alt="ExpressJS Icon" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p>Beginner</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/oracle.svg" alt="Oracle Icon" class="icon" />
+              <div>
+                <h3>PL/SQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/mysql.svg" alt="MySQL Icon" class="icon" />
+              <div>
+                <h3>MySQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/nestjs.svg" alt="NestJS Icon" class="icon" />
+              <div>
+                <h3>NestJS</h3>
+                <p>Beginner</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/java.svg" alt="NestJS Icon" class="icon" />
+              <div>
+                <h3>JAVA</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/bitbucket.svg" alt="NestJS Icon" class="icon" />
+              <div>
+                <h3>BitBucket</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/csharp.svg" alt="NestJS Icon" class="icon" />
+              <div>
+                <h3>C#</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/git.svg" alt="NestJS Icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Advance</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/svgs/jira.svg" alt="NestJS Icon" class="icon" />
+              <div>
+                <h3>JIRA</h3>
+                <p>Advance</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/img/project-1.jpg" alt="YTS Mobile" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">YTS Mobile</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/roshandroids/yts_mobile'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/roshandroids/yts_mobile'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/img/project-2.jpg" alt="Flutter Folio" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Flutter Folio</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/roshandroids/roshandroids'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://roshandroids.github.io/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/img/project-3.jpg" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">TMDB Web App</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/roshandroids/tmdb_app'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://tmdb-app.onrender.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/img/project-4.jpg" alt="SwiftUI challange" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Dayzer SwiftUI</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/roshandroids/todo_swift'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/roshandroids/todo_swift'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/svgs/gmail.svg" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:shrestharoshan776@gmail.com">shrestharoshan776@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/svgs/linkedin.svg" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/roshandroids/'">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Roshan Shrestha. All Rights Reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
