@@ -1,0 +1,81 @@
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+.melos_tool/
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+*.injectable.dart
+
+# Coverage
+coverage/
+coverage.lcov
+
+# iOS
+ios/Pods/
+ios/.generated/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/.symlinks/
+ios/Runner/GeneratedPluginRegistrant.*
+
+# Android
+android/.gradle/
+android/local.properties
+android/key.properties
+android/captures/
+android/app/release/
+android/app/profile/
+android/app/debug/
+
+# macOS
+macos/Pods/
+macos/Flutter/ephemeral/
+macos/Runner/GeneratedPluginRegistrant.*
+
+# Windows
+windows/Flutter/ephemeral/
+windows/Runner/GeneratedPluginRegistrant.*
+
+# Linux
+linux/Flutter/ephemeral/
+linux/runner/GeneratedPluginRegistrant.*
+
+# Web
+lib/generated_plugin_registrant.dart
+
+# Firebase / Secrets
+google-services.json
+GoogleService-Info.plist
+firebase_app_id_file.json
+
+# Environment files
+.env
+.env.*
+
+# IDEs & Editors
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.history/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Logs & temp files
+*.log
+*.swp
+*.swo
+
+# Keep empty folders for Git
+!**/.gitkeep
