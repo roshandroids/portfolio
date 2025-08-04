@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'core/theme/providers/theme_provider.dart';
-import 'core/theme/widgets/system_theme_listener.dart';
-import 'core/theme/widgets/theme_toggle.dart';
+import 'package:portfolio/core/theme/providers/theme_provider.dart';
+import 'package:portfolio/core/theme/widgets/system_theme_listener.dart';
+import 'package:portfolio/core/theme/widgets/theme_toggle.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -51,7 +51,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
     final isSystem = ref.watch(isSystemThemeProvider);
 
     return Scaffold(
-      appBar: AppBar(title: Text(widget.title), actions: [const ThemeToggle()]),
+      appBar: AppBar(title: Text(widget.title), actions: const [ThemeToggle()]),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

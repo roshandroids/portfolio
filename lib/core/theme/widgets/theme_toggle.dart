@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../providers/theme_provider.dart';
+import 'package:portfolio/core/theme/providers/theme_provider.dart';
 
 /// Widget that provides theme switching functionality
 class ThemeToggle extends ConsumerWidget {
@@ -16,7 +16,7 @@ class ThemeToggle extends ConsumerWidget {
         _getThemeIcon(themeState.currentThemeMode),
         color: Theme.of(context).colorScheme.onSurface,
       ),
-      onSelected: (ThemeMode mode) {
+      onSelected: (mode) {
         switch (mode) {
           case ThemeMode.system:
             themeNotifier.switchToSystem();
@@ -29,7 +29,7 @@ class ThemeToggle extends ConsumerWidget {
             break;
         }
       },
-      itemBuilder: (BuildContext context) => [
+      itemBuilder: (context) => [
         PopupMenuItem<ThemeMode>(
           value: ThemeMode.system,
           child: Row(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../providers/theme_provider.dart';
+import 'package:portfolio/core/theme/providers/theme_provider.dart';
 
 /// Widget that listens to system theme changes and updates the theme provider
 class SystemThemeListener extends ConsumerStatefulWidget {

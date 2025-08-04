@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'app_colors.dart';
-import 'app_typography.dart';
+import 'package:portfolio/core/theme/app_colors.dart';
+import 'package:portfolio/core/theme/app_typography.dart';
 
 class AppTheme {
   // Light Theme
@@ -19,11 +19,9 @@ class AppTheme {
         onSecondary: AppColors.grayDefault,
         error: Colors.red,
         onError: AppColors.grayDefault,
-        background: AppColors.background,
-        onBackground: AppColors.onBackground,
         surface: AppColors.surface,
         onSurface: AppColors.onSurface,
-        surfaceVariant: AppColors.gray100,
+        surfaceContainerHighest: AppColors.gray100,
         onSurfaceVariant: AppColors.gray700,
         outline: AppColors.gray300,
         outlineVariant: AppColors.gray200,
@@ -55,7 +53,7 @@ class AppTheme {
       cardTheme: CardThemeData(
         color: AppColors.surface,
         elevation: 2,
-        shadowColor: AppColors.shadow.withOpacity(0.1),
+        shadowColor: AppColors.shadow.withValues(alpha: 0.1),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),
 
@@ -175,11 +173,9 @@ class AppTheme {
         onSecondary: AppColors.grayDarkDefault,
         error: Colors.red,
         onError: AppColors.grayDarkDefault,
-        background: AppColors.backgroundDark,
-        onBackground: AppColors.onBackgroundDark,
         surface: AppColors.surfaceDark,
         onSurface: AppColors.onSurfaceDark,
-        surfaceVariant: AppColors.grayDark100,
+        surfaceContainerHighest: AppColors.grayDark100,
         onSurfaceVariant: AppColors.grayDark300,
         outline: AppColors.grayDark300,
         outlineVariant: AppColors.grayDark200,
@@ -211,7 +207,7 @@ class AppTheme {
       cardTheme: CardThemeData(
         color: AppColors.surfaceDark,
         elevation: 2,
-        shadowColor: AppColors.shadowDark.withOpacity(0.1),
+        shadowColor: AppColors.shadowDark.withValues(alpha: 0.1),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),
 

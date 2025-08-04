@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/core/theme/app_theme.dart';
+import 'package:portfolio/core/theme/providers/theme_state.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import '../app_theme.dart';
-import 'theme_state.dart';
 
 part 'theme_provider.g.dart';
 
@@ -45,7 +45,7 @@ class ThemeNotifier extends _$ThemeNotifier {
 
 /// Provider that provides the current theme data based on the theme state
 @riverpod
-ThemeData themeData(ThemeDataRef ref) {
+ThemeData themeData(Ref ref) {
   final themeState = ref.watch(themeNotifierProvider);
   final isDark = themeState.isDark;
 
@@ -54,21 +54,21 @@ ThemeData themeData(ThemeDataRef ref) {
 
 /// Provider that provides the current theme mode
 @riverpod
-ThemeMode themeMode(ThemeModeRef ref) {
+ThemeMode themeMode(Ref ref) {
   final themeState = ref.watch(themeNotifierProvider);
   return themeState.currentThemeMode;
 }
 
 /// Provider that provides whether the app is in dark mode
 @riverpod
-bool isDarkMode(IsDarkModeRef ref) {
+bool isDarkMode(Ref ref) {
   final themeState = ref.watch(themeNotifierProvider);
   return themeState.isDark;
 }
 
 /// Provider that provides whether the app is following system theme
 @riverpod
-bool isSystemTheme(IsSystemThemeRef ref) {
+bool isSystemTheme(Ref ref) {
   final themeState = ref.watch(themeNotifierProvider);
   return themeState.isSystem;
 }
