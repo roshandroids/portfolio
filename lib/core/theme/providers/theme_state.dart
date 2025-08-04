@@ -33,7 +33,7 @@ class ThemeState with _$ThemeState {
   ThemeState copyWithDarkMode(bool isDark) {
     return copyWith(
       isDarkMode: isDark,
-      themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
+      // Preserve the current theme mode, don't change it to light/dark
     );
   }
 

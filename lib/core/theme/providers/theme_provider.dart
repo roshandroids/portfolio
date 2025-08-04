@@ -16,7 +16,12 @@ class ThemeNotifier extends _$ThemeNotifier {
 
   /// Switch to system theme mode
   void switchToSystem() {
-    state = state.switchToSystem();
+    // Get the current system brightness and update the state accordingly
+    final brightness =
+        WidgetsBinding.instance.platformDispatcher.platformBrightness;
+    final isDark = brightness == Brightness.dark;
+
+    state = state.copyWith(themeMode: ThemeMode.system, isDarkMode: isDark);
   }
 
   /// Switch to light theme mode
@@ -38,8 +43,8 @@ class ThemeNotifier extends _$ThemeNotifier {
   void updateSystemTheme(Brightness brightness) {
     if (state.isSystem) {
       final isDark = brightness == Brightness.dark;
-      state = state.copyWithDarkMode(isDark);
-    }
+      state = state.copyWith(isDarkMode: isDark);
+    } else {}
   }
 }
 

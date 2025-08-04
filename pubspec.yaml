@@ -43,6 +43,15 @@ dependencies:
   riverpod_annotation: ^2.3.5
   freezed_annotation: ^2.4.4
 
+  # Navigation
+  go_router: ^14.6.2
+
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  flutter_gen_runner: ^5.4.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -55,9 +64,9 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
   # Code Generation
-  build_runner: ^2.4.13
-  riverpod_generator: ^2.4.0
-  freezed: ^2.5.7
+  build_runner: ^2.5.4
+  riverpod_generator: ^2.6.4
+  freezed: ^2.5.8
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -68,6 +77,9 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  assets:
+    - assets/images/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -85,10 +97,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Inter
-  #     fonts:
-  #       - asset: fonts/Inter-Regular.ttf
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: fonts/Inter-Regular.ttf
   #       - asset: fonts/Inter-Medium.ttf
   #         weight: 500
   #       - asset: fonts/Inter-SemiBold.ttf

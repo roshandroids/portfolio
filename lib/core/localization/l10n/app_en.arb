@@ -1,0 +1,107 @@
+{
+  "@@locale": "en",
+  "appTitle": "Portfolio",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Navigation link for home page"
+  },
+  "about": "About",
+  "@about": {
+    "description": "Navigation link for about page"
+  },
+  "work": "Work",
+  "@work": {
+    "description": "Navigation link for work page"
+  },
+  "skills": "Skills",
+  "@skills": {
+    "description": "Navigation link for skills page"
+  },
+  "experience": "Experience",
+  "@experience": {
+    "description": "Navigation link for experience page"
+  },
+  "contact": "Contact",
+  "@contact": {
+    "description": "Navigation link for contact page"
+  },
+  "downloadCV": "Download CV",
+  "@downloadCV": {
+    "description": "Button text for downloading CV"
+  },
+  "greeting": "Hi, I'm Sagar",
+  "@greeting": {
+    "description": "Greeting text on home page"
+  },
+  "introduction": "I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love it as if it was something new.",
+  "@introduction": {
+    "description": "Introduction text on home page"
+  },
+  "location": "Ahmedabad, India",
+  "@location": {
+    "description": "Location text on home page"
+  },
+  "availableForProjects": "Available for new projects",
+  "@availableForProjects": {
+    "description": "Availability status text"
+  },
+  "aboutMe": "About me",
+  "@aboutMe": {
+    "description": "About page title"
+  },
+  "aboutSubtitle": "Curious about me? Here you have it:",
+  "@aboutSubtitle": {
+    "description": "About page subtitle"
+  },
+  "aboutIntroduction": "I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.",
+  "@aboutIntroduction": {
+    "description": "About page introduction text"
+  },
+  "aboutJourney": "I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.",
+  "@aboutJourney": {
+    "description": "About page journey text"
+  },
+  "aboutThinking": "I am a progressive thinker and enjoy working on products end to end, from ideation to development.",
+  "@aboutThinking": {
+    "description": "About page thinking style text"
+  },
+  "aboutSocial": "When I'm not in developer mode, you can find me on twitter or on indie hacker, witnessing startup journeys or enjoying my free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.",
+  "@aboutSocial": {
+    "description": "About page social media text"
+  },
+  "aboutQuickBits": "Finally, some quick bits about me.",
+  "@aboutQuickBits": {
+    "description": "About page quick bits section title"
+  },
+  "aboutCallToAction": "One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉",
+  "@aboutCallToAction": {
+    "description": "About page call to action text"
+  },
+  "skillsSubtitle": "The skills, tools and technologies I am really good at:",
+  "@skillsSubtitle": {
+    "description": "Skills page subtitle"
+  },
+  "experienceSubtitle": "Here is a quick summary of my most recent experiences:",
+  "@experienceSubtitle": {
+    "description": "Experience page subtitle"
+  },
+  "workSubtitle": "Some of the noteworthy projects I have built:",
+  "@workSubtitle": {
+    "description": "Work page subtitle"
+  },
+  "viewProject": "View Project",
+  "@viewProject": {
+    "description": "Button text for viewing project"
+  },
+  "pageNotFound": "Page not found",
+  "@pageNotFound": {
+    "description": "Error page title"
+  },
+  "goHome": "Go Home",
+  "@goHome": {
+    "description": "Button text to go to home page"
+  }
+}

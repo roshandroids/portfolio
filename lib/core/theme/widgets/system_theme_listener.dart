@@ -19,6 +19,14 @@ class _SystemThemeListenerState extends ConsumerState<SystemThemeListener>
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
+
+    // Initialize the system brightness when the widget is first created
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final brightness =
+          WidgetsBinding.instance.platformDispatcher.platformBrightness;
+
+      ref.read(themeNotifierProvider.notifier).updateSystemTheme(brightness);
+    });
   }
 
   @override
