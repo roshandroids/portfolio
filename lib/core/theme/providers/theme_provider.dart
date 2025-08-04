@@ -1,0 +1,74 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
+import '../app_theme.dart';
+import 'theme_state.dart';
+
+part 'theme_provider.g.dart';
+
+/// Provider that manages the current theme state
+@riverpod
+class ThemeNotifier extends _$ThemeNotifier {
+  @override
+  ThemeState build() {
+    return const ThemeState();
+  }
+
+  /// Switch to system theme mode
+  void switchToSystem() {
+    state = state.switchToSystem();
+  }
+
+  /// Switch to light theme mode
+  void switchToLight() {
+    state = state.switchToLight();
+  }
+
+  /// Switch to dark theme mode
+  void switchToDark() {
+    state = state.switchToDark();
+  }
+
+  /// Toggle between light and dark mode
+  void toggleTheme() {
+    state = state.toggleTheme();
+  }
+
+  /// Update the dark mode state based on system brightness
+  void updateSystemTheme(Brightness brightness) {
+    if (state.isSystem) {
+      final isDark = brightness == Brightness.dark;
+      state = state.copyWithDarkMode(isDark);
+    }
+  }
+}
+
+/// Provider that provides the current theme data based on the theme state
+@riverpod
+ThemeData themeData(ThemeDataRef ref) {
+  final themeState = ref.watch(themeNotifierProvider);
+  final isDark = themeState.isDark;
+
+  return isDark ? AppTheme.darkTheme : AppTheme.lightTheme;
+}
+
+/// Provider that provides the current theme mode
+@riverpod
+ThemeMode themeMode(ThemeModeRef ref) {
+  final themeState = ref.watch(themeNotifierProvider);
+  return themeState.currentThemeMode;
+}
+
+/// Provider that provides whether the app is in dark mode
+@riverpod
+bool isDarkMode(IsDarkModeRef ref) {
+  final themeState = ref.watch(themeNotifierProvider);
+  return themeState.isDark;
+}
+
+/// Provider that provides whether the app is following system theme
+@riverpod
+bool isSystemTheme(IsSystemThemeRef ref) {
+  final themeState = ref.watch(themeNotifierProvider);
+  return themeState.isSystem;
+}
